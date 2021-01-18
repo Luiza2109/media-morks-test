@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding: 16px 60px;
+  color: $bg-white;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: $orange-tone;
+  border-radius: 4px;
+  transition: 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $bg-white;
+    color: $orange-tone;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

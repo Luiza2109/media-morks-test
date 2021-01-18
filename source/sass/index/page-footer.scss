@@ -1,0 +1,29 @@
+.page-footer__registration {
+  margin: 0 6.25%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin: 0 auto;
+    padding: 0 5%;
+    max-width: 890px;
+  }
+
+  .page-footer__registration {
+    margin: 0;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    max-width: 1170px;
+    padding: 0 60px;
+  }
+
+  .page-footer__registration {
+    margin-bottom: 185px;
+    margin-left: 13px;
+  }
+}

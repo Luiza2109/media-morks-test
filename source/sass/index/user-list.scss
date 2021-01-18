@@ -1,0 +1,74 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  color: $bg-white;
+}
+
+.user-list__item a {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Whitney", "Helvetica", sans-serif;
+  font-weight: 325;
+  text-decoration: none;
+  font-size: 18px;
+  color: $bg-white;
+  text-align: right;
+  transition: 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $orange-tone;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.user-list .user-list__registration-btn {
+  display: flex;
+  align-items: center;
+}
+
+.user-list__registration-btn svg {
+  width: 21px;
+  height: 21px;
+  padding-right: 10px;
+  transition: 0.3s ease-out;
+}
+
+.user-list__registration-btn:hover svg {
+  fill: $orange-tone;
+}
+
+.user-list__registration-btn:focus svg {
+  fill: $orange-tone;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 270px;
+  }
+
+  .user-list__registration-btn {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 260px;
+    padding-right: 15px;
+  }
+
+  .user-list__registration-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
